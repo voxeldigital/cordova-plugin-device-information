@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-device-information" version="0.0.1">
+    <name>DeviceInformation</name>
+    <description>Cordova Search Device Information</description>
+    <license>MIT</license>
+    <keywords>cordova,device,information</keywords>
+    
+    <js-module name="AndroidDeviceInformation" src="www/deviceInformation.js">
+        <clobbers target="cordova.plugins.deviceInformation" />
+    </js-module>
+    <engines>
+        <engine name="cordova" version=">=3.6.0"></engine>
+    </engines>
+    <platform name="android">
+        <source-file src="src/android/br/com/voxeldigital/ionic/deviceInformation/AndroidDeviceInformation.java"
+                     target-dir="src/br/com/voxeldigital/ionic/deviceInformation"></source-file>
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="AndroidDeviceInformation">
+                <param name="android-package" value="br.com.voxeldigital.ionic.deviceinformation.AndroidDeviceInformation" />
+            </feature>
+        </config-file>
+    </platform>
+</plugin>

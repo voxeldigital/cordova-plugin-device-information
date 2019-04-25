@@ -1,0 +1,26 @@
+{
+  "name": "cordova-plugin-device-information",
+  "version": "0.0.1",
+  "description": "Cordova Search Device Information",
+  "cordova": {
+    "id": "cordova-plugin-device-information",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "device",
+    "information",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.6.0"
+    }
+  ],
+  "author": "",
+  "license": "MIT"
+}
